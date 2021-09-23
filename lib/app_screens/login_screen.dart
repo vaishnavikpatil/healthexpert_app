@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:healthexpert_app/app_screens/register_screen.dart';
+import 'package:healthexpert_app/app_screens/home_screen.dart';
 class  Login extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -20,7 +21,7 @@ class  LoginState extends State< Login>{
             child:ListView(
                 children: <Widget> [
                   Padding(
-                    padding: EdgeInsets.only(top:50.0,bottom:5.0,left: 10.0,right: 0.0 ),
+                    padding: EdgeInsets.only(top:50.0,bottom:5.0,left: 60.0,right: 0.0 ),
                     child: Text(
                       "Health",
                       style: TextStyle(
@@ -28,7 +29,7 @@ class  LoginState extends State< Login>{
                     ),
                   ),
                   Padding(
-                      padding: EdgeInsets.only(top:5.0,bottom:50.0,left: 10.0,right:0.0 ),
+                      padding: EdgeInsets.only(top:5.0,bottom:50.0,left: 40.0,right:0.0 ),
                       child:Row(
                           children: <Widget>[
                             Expanded(child:Text(
@@ -85,7 +86,7 @@ class  LoginState extends State< Login>{
                           child: ElevatedButton(
                               child: Text('Login'),
                               onPressed:(){
-
+                                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
                               }
                           )
                       )
@@ -107,7 +108,7 @@ class  LoginState extends State< Login>{
                           child: ElevatedButton(
                             child: Text('Register'),
                             onPressed:(){
-
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Register()));
                             },
                           )),
 
