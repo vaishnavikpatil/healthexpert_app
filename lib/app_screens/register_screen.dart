@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:healthexpert_app/app_screens/login_screen.dart';
+import 'package:healthexpert_app/app_screens/home_screen.dart';
+
+
 class  Register extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -123,7 +125,7 @@ class  RegisterState extends State<Register>{
                           child: ElevatedButton(
                             child: Text('Register'),
                             onPressed:(){
-                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Login()));
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
                             },
                           )),
 

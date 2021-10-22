@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "825239868952",
+    "project_id": "health-expert-cfe87",
+    "storage_bucket": "health-expert-cfe87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825239868952:android:7f522ce7ea65b3112a556d",
+        "android_client_info": {
+          "package_name": "com.example.healthexpert_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825239868952-l5v0trb9i1h7ha6lsupn2qqq223iafqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8qKkQGybRTIz4G26HhrRFs14Tqp8MCJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825239868952-l5v0trb9i1h7ha6lsupn2qqq223iafqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

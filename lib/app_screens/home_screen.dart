@@ -27,9 +27,6 @@ class  HomeState extends State< Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        title: Text('Health Expert'),
-      ) ,
       body:Container(
         child: _widgetOptions.elementAt(_currentIndex),
       ),
@@ -39,22 +36,22 @@ class  HomeState extends State< Home> {
         items:[
           BottomNavigationBarItem(
             icon: Icon(Icons.mail),
-            backgroundColor: Colors.indigo,
+            backgroundColor: Colors.blue,
             label:'Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.emoji_food_beverage),
-            backgroundColor: Colors.indigo,
+            backgroundColor: Colors.blue,
             label: 'Diet',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.fitness_center),
-            backgroundColor: Colors.indigo,
+            backgroundColor: Colors.blue,
             label: 'Exercise',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_box),
-            backgroundColor: Colors.indigo,
+            backgroundColor: Colors.blue,
             label: 'Profile',
           ),
         ],
