@@ -5,7 +5,7 @@ import 'package:healthexpert_app/diet/b.dart';
 import 'package:healthexpert_app/diet/c.dart';
 import 'package:healthexpert_app/diet/d.dart';
 import 'package:healthexpert_app/diet/fibres.dart';
-
+import 'package:healthexpert_app/widgets/backgroundimage.dart';
 
 class  Diet extends StatefulWidget {
   @override
@@ -22,15 +22,19 @@ class  DietState extends State<Diet> {
         title: Text('Diet'),
       ) ,
       drawer:  NavigationDrawerWidget(),
+        body: Container(child: Center(child: BackgroundImage())),
     );
   }
+
 }
 
 
 class  NavigationDrawerWidget extends StatelessWidget{
   final padding = EdgeInsets.symmetric(horizontal: 20);
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+
+  {
     return Drawer(
       child: Material(
         color: Colors.blue,
@@ -79,7 +83,6 @@ class  NavigationDrawerWidget extends StatelessWidget{
       ),
     );
   }
-
   Widget buildMenuItem({
     required String text,
     required IconData icon,
@@ -88,7 +91,7 @@ class  NavigationDrawerWidget extends StatelessWidget{
     final color =Colors.white;
     return ListTile(
       leading: Icon(icon,color:color),
-      title:Text(text,style: TextStyle(color: color)),
+        title:Text(text,style: TextStyle(color: color)),
       onTap: onClicked,
     );
   }

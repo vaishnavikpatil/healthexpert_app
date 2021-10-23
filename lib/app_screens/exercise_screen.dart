@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:healthexpert_app/exercise/gain.dart';
-import 'package:healthexpert_app/exercise/loss.dart';
+import 'package:healthexpert_app/exercise/burpees.dart';
+import 'package:healthexpert_app/exercise/dumbbellrows.dart';
+import 'package:healthexpert_app/exercise/glutebridge.dart';
+import 'package:healthexpert_app/exercise/lunges.dart';
+import 'package:healthexpert_app/exercise/planks.dart';
+import 'package:healthexpert_app/exercise/pushups.dart';
+import 'package:healthexpert_app/exercise/sideplanks.dart';
+import 'package:healthexpert_app/exercise/singleleg.dart';
+import 'package:healthexpert_app/exercise/squats.dart';
+import 'package:healthexpert_app/exercise/standingdumbells.dart';
 
 class  Exercise extends StatefulWidget {
   @override
@@ -34,19 +42,67 @@ class  NavigationDrawerWidget extends StatelessWidget{
         child: ListView(
           padding: padding,
           children: <Widget>[
-            const SizedBox(height: 24),
+
+            const SizedBox(height: 50),
             buildMenuItem(
-              text: "Weight Loss",
+              text: "Lunges",
               icon: Icons.fitness_center,
               onClicked: () => selectedItem(context, 0),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 5),
             buildMenuItem(
-              text: "Weight Gain",
+              text: "Pushups",
               icon: Icons.fitness_center,
               onClicked: () => selectedItem(context, 1),
             ),
-
+            const SizedBox(height: 5),
+            buildMenuItem(
+              text: "Squats",
+              icon: Icons.fitness_center,
+              onClicked: () => selectedItem(context, 2),
+            ),
+            const SizedBox(height: 5),
+            buildMenuItem(
+              text: "Standing overhead dumbbell presses",
+              icon: Icons.fitness_center,
+              onClicked: () => selectedItem(context, 3),
+            ),
+            const SizedBox(height: 5),
+            buildMenuItem(
+              text: "Dumbbell rows",
+              icon: Icons.fitness_center,
+              onClicked: () => selectedItem(context, 4),
+            ),
+            const SizedBox(height: 5),
+            buildMenuItem(
+              text: "Single-leg deadlifts",
+              icon: Icons.fitness_center,
+              onClicked: () => selectedItem(context, 5),
+            ),
+        const SizedBox(height: 5),
+        buildMenuItem(
+          text: "Burpees",
+          icon: Icons.fitness_center,
+          onClicked: () => selectedItem(context, 6),
+        ),
+        const SizedBox(height: 5),
+        buildMenuItem(
+          text: "Side planks",
+          icon: Icons.fitness_center,
+          onClicked: () => selectedItem(context, 7),
+        ),
+        const SizedBox(height: 5),
+        buildMenuItem(
+          text: "Planks",
+          icon: Icons.fitness_center,
+          onClicked: () => selectedItem(context, 8),
+        ),
+        const SizedBox(height: 5),
+        buildMenuItem(
+          text: "Glute bridge",
+          icon: Icons.fitness_center,
+          onClicked: () => selectedItem(context, 9),
+        ),
           ],
         ),
       ),
@@ -70,12 +126,52 @@ class  NavigationDrawerWidget extends StatelessWidget{
     switch(index){
       case 0:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context)=>Loss(),
+          builder: (context)=>lungs(),
         ));
         break;
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context)=>Gain(),
+          builder: (context)=>pushups(),
+        ));
+        break;
+      case 2:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>squats(),
+        ));
+        break;
+      case 3:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>standingdumbells(),
+        ));
+        break;
+      case 4:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>dumbbelrows(),
+        ));
+        break;
+      case 5:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>singleleg(),
+        ));
+        break;
+      case 6:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>Burpees(),
+        ));
+        break;
+      case 7:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>sideplanks(),
+        ));
+        break;
+      case 8:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>planks(),
+        ));
+        break;
+      case 9:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>glutebridge(),
         ));
         break;
     }
