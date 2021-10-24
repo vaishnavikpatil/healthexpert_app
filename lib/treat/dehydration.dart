@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healthexpert_app/app_screens/home_screen.dart';
 import 'package:healthexpert_app/disease/dehydration.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class One extends StatefulWidget {
   @override
@@ -39,7 +40,15 @@ class OneState extends State<One> {
                   child: Text('Go back to First page'),
                   onPressed:(){
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
-                  },),))),Container(
+                  },),))),
+        Container(
+          child: Align(
+              alignment: Alignment.bottomLeft,
+              child: ElevatedButton(
+                  child: Text('Book an Appointment',
+                  ),
+                  onPressed: () => launch('https://www.practo.com/thane/doctor/dr-rahul-jalgaonkar-general-physician?practice_id=727007&specialization=General%20Physician&referrer=doctor_listing'),
+              ))),Container(
                 child: Align(
                     alignment: Alignment.bottomLeft,
                     child: Container(
@@ -50,17 +59,7 @@ class OneState extends State<One> {
                         onPressed:(){
                           Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Deh()));
                         },),)),),
-                Container(
-                    child: Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Container(
-                        padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
-                        color: Colors.black12,
-                        child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                      ),
-                    )
-                ),
+
                 Container(
                     child: Align(
                       alignment: Alignment.bottomRight,
@@ -263,7 +262,7 @@ class TwoState extends State<Two> {
                         padding: EdgeInsets.only(bottom: 5,top:8),
                         height: 35,
                         color: Colors.black12,
-                        child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                        child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                       ),
                     )
                 ),
@@ -471,7 +470,7 @@ class ThreeState extends State<Three> {
                         padding: EdgeInsets.only(bottom: 5,top:8),
                         height: 35,
                         color: Colors.black12,
-                        child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                        child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                       ),
                     )
                 ),
@@ -681,7 +680,7 @@ class FourState extends State<Four> {
                         padding: EdgeInsets.only(bottom: 5,top:8),
                         height: 35,
                         color: Colors.black12,
-                        child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                        child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                       ),
                     )
                 ),
@@ -892,7 +891,7 @@ class FiveState extends State<Five> {
                 padding: EdgeInsets.only(bottom: 5,top:8),
                 height: 35,
                 color: Colors.black12,
-                child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
               ),
             )
         ),

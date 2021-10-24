@@ -4,6 +4,8 @@ import 'package:healthexpert_app/disease/constipation.dart';
 import 'package:healthexpert_app/disease/cough.dart';
 import 'package:healthexpert_app/disease/dehydration.dart';
 import 'package:healthexpert_app/disease/fever.dart';
+import 'package:healthexpert_app/widgets/background.dart';
+
 
 class Chat extends StatefulWidget {
   @override
@@ -20,7 +22,10 @@ class ChatState extends State<Chat> {
       appBar:AppBar(
         title: Text('Health Expert'),
       ) ,
-      body: Container(
+      body: Stack(
+        children: [
+          BackgroundImage(),
+      Container(
         child: Align(
               alignment: Alignment.bottomLeft,
               child: Container(
@@ -85,6 +90,6 @@ class ChatState extends State<Chat> {
               ),
         ),
       ),
-    );
+    ]));
   }
 }

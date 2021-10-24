@@ -32,7 +32,8 @@ dependencies:
   firebase_auth: ^3.1.3
   cloud_firestore: ^2.5.3
   firebase_core: ^1.7.0
-
+  google_fonts: ^2.0.0
+  font_awesome_flutter: ^9.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -63,6 +64,7 @@ flutter:
     - images/dumbbellrows.jpg
     - images/burpees.jpg
     - images/exercisebackground.jpg
+    - images/Health-checkup-cartoon-illustration-vector.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

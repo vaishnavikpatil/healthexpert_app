@@ -54,7 +54,7 @@ class TwoState extends State<Two> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                         ),
                       )
                   ),
@@ -65,7 +65,7 @@ class TwoState extends State<Two> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested test - COLONOSCOPY  '),
+                          child:Text(' Suggested test - COLONOSCOPY  '),
                         ),
                       )
                   ),
@@ -332,7 +332,7 @@ class OneState extends State<One> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                         ),
                       )
                   ),
@@ -343,7 +343,7 @@ class OneState extends State<One> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested test - COLONOSCOPY  '),
+                          child:Text(' Suggested test - COLONOSCOPY  '),
                         ),
                       )
                   ),
@@ -611,7 +611,7 @@ class ThreeState extends State<Three> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                         ),
                       )
                   ),
@@ -622,7 +622,7 @@ class ThreeState extends State<Three> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested test - COLONOSCOPY  '),
+                          child:Text(' Suggested test - COLONOSCOPY  '),
                         ),
                       )
                   ),
@@ -888,7 +888,7 @@ class FourState extends State<Four> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                         ),
                       )
                   ),
@@ -899,7 +899,7 @@ class FourState extends State<Four> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested test - COLONOSCOPY  '),
+                          child:Text(' Suggested test - COLONOSCOPY  '),
                         ),
                       )
                   ),
@@ -1166,7 +1166,7 @@ class FiveState extends State<Five> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                         ),
                       )
                   ),
@@ -1177,7 +1177,7 @@ class FiveState extends State<Five> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested test - COLONOSCOPY  '),
+                          child:Text(' Suggested test - COLONOSCOPY  '),
                         ),
                       )
                   ),
@@ -1440,7 +1440,7 @@ class SixState extends State<Six> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
+                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
                         ),
                       )
                   ),
@@ -1451,7 +1451,7 @@ class SixState extends State<Six> {
                           padding: EdgeInsets.only(bottom: 5,top:8),
                           height: 35,
                           color: Colors.black12,
-                          child:Text(' Seggested test - COLONOSCOPY  '),
+                          child:Text(' Suggested test - COLONOSCOPY  '),
                         ),
                       )
                   ),

@@ -1,7 +1,11 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:healthexpert_app/app_screens/home_screen.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:healthexpert_app/app_screens/register_screen.dart';
+import 'package:healthexpert_app/widgets/background.dart';
+import 'package:healthexpert_app/widgets/login-button.dart';
+import 'package:healthexpert_app/widgets/palette.dart';
+import 'package:healthexpert_app/widgets/passwordinput.dart';
+import 'package:healthexpert_app/widgets/textinput.dart';
 class  Login extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -10,126 +14,118 @@ class  Login extends StatefulWidget {
 }
 
 class  LoginState extends State< Login>{
- late String _email ,_password;
- final auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context){
-    return Scaffold(
-        appBar:AppBar(
-          title: Text('Health Expert'),
-        ) ,
-        body:Container(
-            child:ListView(
-                children: <Widget> [
-                  Padding(
-                    padding: EdgeInsets.only(top:50.0,bottom:5.0,left: 60.0,right: 0.0 ),
-                    child: Text(
-                      "Health",
-                      style: TextStyle(
-                          fontSize: 60.0,fontWeight: FontWeight.bold),
+    return  Stack(
+        children: [
+        BackgroundImage(),
+          Scaffold(
+            backgroundColor: Colors.transparent,
+            body: SafeArea(
+              child: ListView(
+                children: [
+                  Container(height: 70),
+                  Container(
+                    height: 150,
+                    child: Center(
+                      child: Text(
+                        'HEALTH EXPERT',
+                        style: kHeading,
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
-                  Padding(
-                      padding: EdgeInsets.only(top:5.0,bottom:50.0,left: 40.0,right:0.0 ),
-                      child:Row(
-                          children: <Widget>[
-                            Expanded(child:Text(
-                              "Expert",
-                              style: TextStyle(
-                                  fontSize: 60.0,fontWeight: FontWeight.bold),
-                            ),
-                            ),
-                            Expanded(child:Text(
-                              "+",
-                              style: TextStyle(
-                                  fontSize: 60.0,fontWeight: FontWeight.bold,color: Colors.green),
-                            ),
-                            ),])),
-                  Padding(
-                      padding: EdgeInsets.only(top:15.0,bottom:5.0,left: 10.0,right: 10.0 ),
-                      child: TextField(
-
-                          decoration: InputDecoration(
-                              labelText:'Email ID',
-                              hintText: 'Enter your Email ID',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(5.0),
-                              )
-                          ),
-                          onChanged: (value){
-                  setState(() {
-                  _email =value.trim();
-                  });
-                  },
-                      )),
-                  Padding(
-                      padding: EdgeInsets.only(top:5.0,bottom:5.0,left: 10.0,right: 10.0  ),
-                      child:TextField(
-                          decoration: InputDecoration(
-                              labelText:'Password',
-                              hintText: 'Enter your Password ',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(5.0),
-                              )
-                                ),onChanged: (value){
-                            setState(() {
-                              _password =value.trim();
-                            });
-                      },
-                      )
+                  SizedBox(
+                    height: 40,
                   ),
-                  Padding(
-                    padding:EdgeInsets.only(top:5.0,bottom: 5.0,left: 10.0,right: 10.0 ),
-                    child:Row(children: <Widget>[
-                      Expanded(
-                          child: ElevatedButton(
-                            child: Text('Forgot Password'),
-                            onPressed:(){
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 40),
+                    child: Column(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            TextInput(
 
-                            },
-                          )),
-                      Container(width: 5.0),
-                      Expanded(
-                          child: ElevatedButton(
-                              child: Text('Login'),
-                              onPressed:(){
-                               auth.signInWithEmailAndPassword(email: _email, password: _password);
-                              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Home()));
-                              }
-                          )
-                      )
+                              icon: FontAwesomeIcons.user,
+                              hint: 'Login e.g. abc@123',
+                              inputType: TextInputType.emailAddress,
+                              inputAction: TextInputAction.next,
+                            ),
+                            PasswordInput(
+                              icon: FontAwesomeIcons.lock,
+                              hint: 'Password',
+                              inputType: TextInputType.visiblePassword,
+                              inputAction: TextInputAction.done,
+                            ),
 
-                    ],),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(top:2.0,bottom:2.0,left: 130.0,right: 70.0 ),
-                    child: Text(
-                      "--------------or--------------",
-                      style: TextStyle(
-                          fontSize:15.0,fontWeight: FontWeight.normal),
+                            TextButton(
+                              onPressed: () {} ,
+                              child: Text(
+                                'Forgot Password?',
+                                style: kBodyText,
+
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            SizedBox(
+                              height: 35,
+                            ),
+                            LoginButton(
+                              buttonText: 'Login',
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Container(
+                              child: Text(
+                                '----------Or----------',
+                                style: kBodyText,
+                              ),
+                            ),
+                            SizedBox(height: 15,),
+                            Container(
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: TextButton(
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Register()));
+                                    },
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 10.0),
+                                      child: Text(
+                                        'Register',
+                                        style: kBodyText,
+
+                                      ),
+
+                                    )
+                                )
+                            )
+                          ],
+                        )
+                      ],
                     ),
-                  ),
-                  Padding(
-                    padding:EdgeInsets.only(top:5.0,bottom: 5.0,left: 10.0,right: 10.0),
-                    child:Row(children: <Widget>[
-                      Expanded(
-                          child: ElevatedButton(
-                            child: Text('Register'),
-                            onPressed:(){
-                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Register()));
-                            },
-                          )),
-
-
-                    ],),
                   )
+                ],
+              ),
+            ),
+          ),
 
 
 
-                ]
-            )
-        )
-    );
+
+        ]);
+
+
   }
 }
 
