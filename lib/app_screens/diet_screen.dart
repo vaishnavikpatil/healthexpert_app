@@ -4,7 +4,9 @@ import 'package:healthexpert_app/diet/a.dart';
 import 'package:healthexpert_app/diet/b.dart';
 import 'package:healthexpert_app/diet/c.dart';
 import 'package:healthexpert_app/diet/d.dart';
-import 'package:healthexpert_app/diet/fibres.dart';
+import 'package:healthexpert_app/diet/fibers.dart';
+import 'package:healthexpert_app/diet/weightgain.dart';
+import 'package:healthexpert_app/diet/weightloss.dart';
 import 'package:healthexpert_app/widgets/backgroundimage.dart';
 
 class  Diet extends StatefulWidget {
@@ -41,7 +43,7 @@ class  NavigationDrawerWidget extends StatelessWidget{
         child: ListView(
           padding: padding,
           children: <Widget>[
-            const SizedBox(height: 24),
+            const SizedBox(height: 70),
             buildMenuItem(
               text: "Vitamin A",
               icon: Icons.emoji_food_beverage,
@@ -67,7 +69,7 @@ class  NavigationDrawerWidget extends StatelessWidget{
             ),
             const SizedBox(height: 24),
             buildMenuItem(
-              text: "Fibres",
+              text: "Fibers",
               icon: Icons.emoji_food_beverage,
               onClicked: () => selectedItem(context, 4),
             ),
@@ -77,7 +79,18 @@ class  NavigationDrawerWidget extends StatelessWidget{
               icon: Icons.emoji_food_beverage,
               onClicked: () => selectedItem(context, 5),
             ),
-
+            const SizedBox(height: 24),
+            buildMenuItem(
+              text: "Weight Loss",
+              icon: Icons.emoji_food_beverage,
+              onClicked: () => selectedItem(context, 6),
+            ),
+            const SizedBox(height: 24),
+            buildMenuItem(
+              text: "Weight Gain",
+              icon: Icons.emoji_food_beverage,
+              onClicked: () => selectedItem(context, 7),
+            ),
           ],
         ),
       ),
@@ -120,12 +133,22 @@ class  NavigationDrawerWidget extends StatelessWidget{
         break;
       case 4:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context)=>Fibres(),
+          builder: (context)=>Fibers(),
         ));
         break;
       case 5:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context)=>Protein(),
+        ));
+        break;
+      case 6:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>weightloss(),
+        ));
+        break;
+      case 7:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>weightgain(),
         ));
         break;
     }

@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 
-class C extends StatefulWidget {
+class Fibers extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return CState();
+    return FibersState();
   }
 }
 
-class CState extends State<C> {
+class FibersState extends State<Fibers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title: Text('Vitamin C'),
+        title: Text('Fibers'),
       ) ,
       body: ListView(
         children: [
           Container(
-            height: 80,
+            height: 100,
           ),
           Container(
             height: 50,
-            child: Text('Vitamin C',
+            child: Text('Fibers',
               textAlign: TextAlign.center,
               textDirection: TextDirection.ltr,
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32,color: Colors.blue,decoration: TextDecoration.underline,
@@ -33,40 +33,51 @@ class CState extends State<C> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Container(
-              height: 138,
-              child: Text('         Vitamin C, or ascorbic acid, is a water-soluble vitamin. This means that it dissolves in water and is delivered to the body’s tissues but is not well stored, so it must be taken daily through food or supplements.\nGood source for vitamin C are:  ',
-                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),
+              height: 125,
+              child: Text('         Fibers  is simply a type of carbohydrate found naturally in plant-based foods that is not digestible in humans. \nGood source for Fibers are: ',
+                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+
               ),
             ),
           ),
           Container(
             height: 28,
-            child: Text('      1)Citrus (oranges, kiwi, lemon, grapefruit)',
+            child: Text('          1)Beans',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('      2)Bell peppers',
+            child: Text('          2)Broccoli',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('      3)Strawberries',
+            child: Text('          3)Berries',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('      4)Tomatoes',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-          ),
-          Container(
-            height: 50,
-            child: Text('      5)Cruciferous vegetables (broccoli,Brussels \n         sprouts,cabbage,cauliflower)',
+            child: Text('          4)Avocados',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('      6)White potatoes ',
+            child: Text('          5)Whole Grain',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          ),
+          Container(
+            height: 28,
+            child: Text('          6)Apples',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          ),
+          Container(
+            height: 28,
+            child: Text('          7)Dried fruits,Nuts',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          ),
+          Container(
+            height: 28,
+            child: Text('          8)Potatoes',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
         ],

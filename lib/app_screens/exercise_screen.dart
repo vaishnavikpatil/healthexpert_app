@@ -9,6 +9,7 @@ import 'package:healthexpert_app/exercise/sideplanks.dart';
 import 'package:healthexpert_app/exercise/singleleg.dart';
 import 'package:healthexpert_app/exercise/squats.dart';
 import 'package:healthexpert_app/exercise/standingdumbells.dart';
+import 'package:healthexpert_app/widgets/backgroundimage1.dart';
 
 class  Exercise extends StatefulWidget {
   @override
@@ -25,6 +26,7 @@ class  ExerciseState extends State<Exercise> {
       appBar:AppBar(
         title: Text('Exercise'),
       ) ,
+      body: Container(child: Center(child: BackgroundImage1())),
       drawer: NavigationDrawerWidget(),
     );
   }

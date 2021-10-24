@@ -38,13 +38,16 @@ class BurpeesState extends State<Burpees> {
                     decorationStyle: TextDecorationStyle.wavy,
                     decorationColor: Colors.black,),),
               ),
-          Container(
-            height: 75,
-              child: Text(
-                  "An exercise we love to hate, burpees are a super effective whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength.Steps to do Burpees are given below:",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 14),
-                textAlign: TextAlign.center,
-              ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: Container(
+              height: 75,
+                child: Text(
+                    "An exercise we love to hate, burpees are a super effective whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength.Steps to do Burpees are given below:",
+                    style: TextStyle(fontWeight: FontWeight.bold,fontSize: 14),
+                  textAlign: TextAlign.center,
+                ),
+            ),
           ),
           Container(
             height: 40,

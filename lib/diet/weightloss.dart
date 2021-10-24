@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class D extends StatefulWidget {
+class weightloss extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return DState();
+    return weightlossState();
   }
 }
 
-class DState extends State<D> {
+class weightlossState extends State<weightloss> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title: Text('Vitamin D'),
+        title: Text('Weight Loss'),
       ) ,
       body: ListView(
         children: [
@@ -21,7 +21,7 @@ class DState extends State<D> {
           ),
           Container(
             height: 50,
-            child: Text('Vitamin D',
+            child: Text('Weight Loss',
               textAlign: TextAlign.center,
               textDirection: TextDirection.ltr,
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32,color: Colors.blue,decoration: TextDecoration.underline,
@@ -33,8 +33,8 @@ class DState extends State<D> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Container(
-              height: 170,
-              child: Text('         Vitamin D is both a nutrient we eat and a hormone our bodies make. It is a fat-soluble vitamin that has long been known to help the body absorb and retain calcium and phosphorus; both are critical for building bone.\nGood food sources of vitamin D include:',
+              height: 35,
+              child: Text('   Steps For Weight Loss are:',
                 style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
 
               ),
@@ -42,48 +42,62 @@ class DState extends State<D> {
           ),
           Container(
             height: 28,
-            child: Text('          1)Cod liver oil',
+            child: Text('          1)Do not skip Breakfast',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          2)Salmon',
+            child: Text('          2)Eat Regular meals',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          3)Swordfish Orange juice',
+            child: Text('          3)Eat plenty of fruit and veg',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          4)Dairy',
+            child: Text('          4)Get more active',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          5)Plant milk',
+            child: Text('          5)Drink plenty of water',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          6)Sardines',
+            child: Text('          6)Eat high fibre foods',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          7)Beef liver',
+            child: Text('          7)Read food labels',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          8)Egg yolk',
+            child: Text('          8)Use a smaller plate ',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
           Container(
             height: 28,
-            child: Text('          9)Fortified cereals'
-                '',
+            child: Text('          9)Do not ban food',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          ),
+          Container(
+            height: 28,
+            child: Text('         10)Do not stock junk food',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          ),
+          Container(
+            height: 28,
+            child: Text('         11)Cut down on alcohol',
+              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          ),
+          Container(
+            height: 28,
+            child: Text('         12)Plan your meals',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
           ),
         ],
