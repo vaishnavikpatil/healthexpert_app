@@ -30,13 +30,16 @@ class OneState extends State<One> {
           child: ListView(
               reverse: true,
               children: [ Container(
+          child: Align(
+          alignment: Alignment.bottomLeft,
+              child:Container(
 
                 height: 35,
                 child: ElevatedButton(
                   child: Text('Go back to First page'),
                   onPressed:(){
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
-                  },),),Container(
+                  },),))),Container(
                 child: Align(
                     alignment: Alignment.bottomLeft,
                     child: Container(
@@ -108,7 +111,7 @@ class OneState extends State<One> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5, top: 8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child: Text(
                             ' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
@@ -233,13 +236,16 @@ class TwoState extends State<Two> {
           child: ListView(
               reverse: true,
               children: [ Container(
+          child: Align(
+          alignment: Alignment.bottomLeft,
+              child:Container(
 
                 height: 35,
                 child: ElevatedButton(
                   child: Text('Go back to First page'),
                   onPressed:(){
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
-                  },),),Container(
+                  },),))),Container(
                 child: Align(
                     alignment: Alignment.bottomLeft,
                     child: Container(
@@ -312,7 +318,7 @@ class TwoState extends State<Two> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -438,13 +444,16 @@ class ThreeState extends State<Three> {
               reverse: true,
               children: [
                 Container(
+                    child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child:Container(
 
-                  height: 35,
-                  child: ElevatedButton(
-                    child: Text('Go back to First page'),
-                    onPressed:(){
-                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
-                    },),),Container(
+                          height: 35,
+                          child: ElevatedButton(
+                            child: Text('Go back to First page'),
+                            onPressed:(){
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
+                            },),))),Container(
                   child: Align(
                       alignment: Alignment.bottomLeft,
                       child: Container(
@@ -518,7 +527,7 @@ class ThreeState extends State<Three> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -645,13 +654,16 @@ class FourState extends State<Four> {
               reverse: true,
               children: [
                 Container(
+                    child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child:Container(
 
-                  height: 35,
-                  child: ElevatedButton(
-                    child: Text('Go back to First page'),
-                    onPressed:(){
-                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
-                    },),),Container(
+                          height: 35,
+                          child: ElevatedButton(
+                            child: Text('Go back to First page'),
+                            onPressed:(){
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
+                            },),))),Container(
                   child: Align(
                       alignment: Alignment.bottomLeft,
                       child: Container(
@@ -725,7 +737,7 @@ class FourState extends State<Four> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -852,14 +864,17 @@ class FiveState extends State<Five> {
           child: ListView(
               reverse: true,
               children: [
-            Container(
+                Container(
+                    child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child:Container(
 
-            height: 35,
-            child: ElevatedButton(
-              child: Text('Go back to First page'),
-              onPressed:(){
-                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
-              },),),Container(
+                          height: 35,
+                          child: ElevatedButton(
+                            child: Text('Go back to First page'),
+                            onPressed:(){
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
+                            },),))),Container(
       child: Align(
           alignment: Alignment.bottomLeft,
           child: Container(
@@ -933,7 +948,7 @@ class FiveState extends State<Five> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),

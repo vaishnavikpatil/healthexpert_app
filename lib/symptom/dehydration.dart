@@ -64,7 +64,7 @@ class FifthState extends State<Fifth> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -230,7 +230,7 @@ class FourthState extends State<Fourth> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -396,7 +396,7 @@ class ThirdState extends State<Third> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -561,7 +561,7 @@ class SecondState extends State<Second> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height: 50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
@@ -727,7 +727,7 @@ class FirstState extends State<First> {
                       alignment: Alignment.bottomLeft,
                       child: Container(
                         padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
+                        height:50,
                         color: Colors.black12,
                         child:Text(' Drink Electrolyte drink/rehydration drink(Add 1/2 teaspoon salt and 6 teaspoons sugar to 1 liter water)   '),
                       ),
