@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:healthexpert_app/app_screens/register_screen.dart';
 import 'package:healthexpert_app/widgets/background.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:healthexpert_app/widgets/login-button.dart';
 import 'package:healthexpert_app/widgets/palette.dart';
 import 'package:healthexpert_app/widgets/passwordinput.dart';
