@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:healthexpert_app/disease/constipatiom.dart';
+import 'package:healthexpert_app/disease/Gas.dart';
+import 'package:healthexpert_app/disease/constipation.dart';
+import 'package:healthexpert_app/disease/cough.dart';
+import 'package:healthexpert_app/disease/dehydration.dart';
+import 'package:healthexpert_app/disease/fever.dart';
 
 class Chat extends StatefulWidget {
   @override
@@ -40,7 +44,7 @@ class ChatState extends State<Chat> {
                     SizedBox(width: 15,),
                     FloatingActionButton(
                       onPressed: (){
-                        String name =   symptomController.text.toLowerCase();
+                        String name = symptomController.text.toLowerCase();
                         if (
                         name.contains('constipation')
                         ){
@@ -48,9 +52,27 @@ class ChatState extends State<Chat> {
                         }
                         else if
                         (
-                        name.contains('constipation')
+                        name.contains('cough')
                         ){
-                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Constipation()));
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Cough()));
+                        }
+                        else if
+                        (
+                        name.contains('fever')
+                        ){
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Fever()));
+                        }
+                        else if
+                        (
+                        name.contains('dehydration')
+                        ){
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Dehydration()));
+                        }
+                        else if
+                        (
+                        name.contains('gas')
+                        ){
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Gas()));
                         }
                       },
                       child: Icon(Icons.send,color: Colors.white,size: 18,),

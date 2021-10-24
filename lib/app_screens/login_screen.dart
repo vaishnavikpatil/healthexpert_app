@@ -1,6 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:healthexpert_app/app_screens/register_screen.dart';
 import 'package:healthexpert_app/app_screens/home_screen.dart';
+import 'package:healthexpert_app/app_screens/register_screen.dart';
 class  Login extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -9,8 +10,8 @@ class  Login extends StatefulWidget {
 }
 
 class  LoginState extends State< Login>{
-  TextEditingController loginController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+ late String _email ,_password;
+ final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -47,28 +48,34 @@ class  LoginState extends State< Login>{
                   Padding(
                       padding: EdgeInsets.only(top:15.0,bottom:5.0,left: 10.0,right: 10.0 ),
                       child: TextField(
-                          controller: loginController,
+
                           decoration: InputDecoration(
-                              labelText:'Login ID',
-                              hintText: 'Enter your Login ID e.g.abc@123',
+                              labelText:'Email ID',
+                              hintText: 'Enter your Email ID',
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                               )
-                          )
+                          ),
+                          onChanged: (value){
+                  setState(() {
+                  _email =value.trim();
+                  });
+                  },
                       )),
                   Padding(
                       padding: EdgeInsets.only(top:5.0,bottom:5.0,left: 10.0,right: 10.0  ),
                       child:TextField(
-                          keyboardType: TextInputType.number,
-                          controller: passwordController,
                           decoration: InputDecoration(
                               labelText:'Password',
-                              hintText: 'Enter your Password e.g.123456',
+                              hintText: 'Enter your Password ',
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                               )
-
-                          )
+                                ),onChanged: (value){
+                            setState(() {
+                              _password =value.trim();
+                            });
+                      },
                       )
                   ),
                   Padding(
@@ -86,7 +93,8 @@ class  LoginState extends State< Login>{
                           child: ElevatedButton(
                               child: Text('Login'),
                               onPressed:(){
-                                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
+                               auth.signInWithEmailAndPassword(email: _email, password: _password);
+                              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Home()));
                               }
                           )
                       )

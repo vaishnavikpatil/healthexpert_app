@@ -54,19 +54,6 @@ class  RegisterState extends State<Register>{
                   ),
                   Padding(
                       padding: EdgeInsets.only(top:5.0,bottom:5.0,left: 10.0,right: 10.0 ),
-                      child: TextField(
-                          controller: emailController,
-                          keyboardType: TextInputType.emailAddress,
-                          decoration: InputDecoration(
-                              labelText:'Email',
-                              hintText: 'abc@gmail.com',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(5.0),
-                              )
-                          )
-                      )),
-                  Padding(
-                      padding: EdgeInsets.only(top:5.0,bottom:5.0,left: 10.0,right: 10.0 ),
                       child:TextField(
                           controller: phoneController,
                           keyboardType: TextInputType.number,
@@ -96,10 +83,11 @@ class  RegisterState extends State<Register>{
                   Padding(
                       padding: EdgeInsets.only(top:5.0,bottom:5.0,left: 10.0,right: 10.0 ),
                       child: TextField(
-                          controller: loginController,
+                          controller: emailController,
+                          keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
-                              labelText:'LoginID',
-                              hintText: 'Include upper case,number,special character.(minimum 9 characters)',
+                              labelText:'Email',
+                              hintText: 'abc@gmail.com',
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                               )
@@ -112,7 +100,7 @@ class  RegisterState extends State<Register>{
                           keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                               labelText:' Password',
-                              hintText: '6 digit password e.g.123456',
+                              hintText: 'Enter your password',
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                               )

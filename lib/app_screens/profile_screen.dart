@@ -1,4 +1,7 @@
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:healthexpert_app/app_screens/login_screen.dart';
 
 class  Profile extends StatefulWidget {
   @override
@@ -22,6 +25,7 @@ class  ProfileState extends State<Profile> {
 
 
 class Body extends StatelessWidget {
+  final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -36,11 +40,6 @@ class Body extends StatelessWidget {
             press: () {},
           ),
           ProfileMenu(
-            text: "Notifications",
-            icon: "",
-            press: () {},
-          ),
-          ProfileMenu(
             text: "Settings",
             icon: "",
             press: () {},
@@ -51,9 +50,19 @@ class Body extends StatelessWidget {
             press: () {},
           ),
           ProfileMenu(
+            text: "Updates",
+            icon:"",
+            press: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Update()));
+            },
+          ),
+          ProfileMenu(
             text: "Log Out",
             icon:"",
-            press: () {},
+            press: () {
+              auth.signOut();
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login()));
+            },
           ),
         ],
       ),
@@ -128,3 +137,31 @@ class ProfilePic extends StatelessWidget {
     );
   }
 }
+
+
+class Update extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return  UpdateState();
+  }
+}
+
+class UpdateState extends State<Update> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar:AppBar(
+        title: Text('Updates'),
+      ) ,
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Container(
+          child: Center(
+            child: Text('No updates available'),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
