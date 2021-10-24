@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:healthexpert_app/app_screens/aboutapp_screen.dart';
 import 'package:healthexpert_app/app_screens/login_screen.dart';
 
 class  Profile extends StatefulWidget {
@@ -46,7 +47,8 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "About App",
             icon:"",
-            press: () {},
+            press: () {Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>aboutapp()));
+            },
           ),
           ProfileMenu(
             text: "Updates",

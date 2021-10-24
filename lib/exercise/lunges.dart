@@ -48,12 +48,12 @@ class LungState extends State<lungs> {
           ),
           Container(
             height: 60,
-            child: Text( '   1.Start by lying on the floor with your knees bent, feet flat on the ground, and arms straight at your sides with your palms facing down.'
+            child: Text( '   1.Start by lying on the floor with your knees bent, feet flat on \n    the ground, and arms straight at your sides with your palms \n    facing down.'
             ),
           ),
           Container(
             height: 75,
-            child: Text('   2.Pushing through your heels, raise your hips off the ground by squeezing your core, glutes, and hamstrings. Your upper back and shoulders should still be in contact with the ground, and your core down to your knees should form a straight line.'),
+            child: Text('   2.Pushing through your heels, raise your hips off the ground \n    by squeezing your core, glutes, and hamstrings. Your upper back and shoulders should still be in contact with the ground, and your core down to your knees should form a straight line.'),
           ),
           Container(
             height: 50,
