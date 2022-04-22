@@ -107,7 +107,7 @@ class aboutappState extends State<aboutapp> {
                     height: 35,
                     child: InkWell(
                         child: Text('https://chat.whatsapp.com/KALoLH1hOyL433vPtJhBbu',
-                          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13,color: Colors.red,
+                          style: TextStyle(fontWeight: FontWeight.bold,fontSize: 13,color: Colors.blue,
                             decoration: TextDecoration.underline,
                           ),),
                         onTap: () => launch('https://chat.whatsapp.com/KALoLH1hOyL433vPtJhBbu')
@@ -130,7 +130,7 @@ class aboutappState extends State<aboutapp> {
                   height: 35,
                   child: InkWell(
                       child: Text('healthexpert146@gmail.com',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: Colors.red,
+                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: Colors.blue,
                           decoration: TextDecoration.underline,
                         ),),
                       onTap: () => launch('https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=GTvVlcSGLPkPTBdgBFRmQCznJtbDsMMCDrWnLxPkbQPmNHVqrJDsrPrXHXkHSSrtmLQnCWlWxWnWL')

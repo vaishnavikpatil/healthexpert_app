@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healthexpert_app/app_screens/home_screen.dart';
 import 'package:healthexpert_app/disease/constipation.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class Two extends StatefulWidget {
@@ -49,26 +50,20 @@ class TwoState extends State<Two> {
                             },),)),),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Book an Appointment',
+                            ),
+                            onPressed: () => launch('https://www.practo.com/mumbai/doctor/dr-hardik-shah-1-gastroenterologist?practice_id=1114150&specialization=Constipation%20Treatment&referrer=doctor_listing&category_name=service&category_id=1634'),
+                          ))),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested test - COLONOSCOPY  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Suggested test- Colonoscopy',
+                            ),
+                            onPressed: () => launch('https://www.google.com/search?q=colonoscopy+test+near+me&sxsrf=APq-WBsRPJ5RkkqM3-P29k8Nc2geADjHUw%3A1649815831662&source=hp&ei=FzFWYrzSJse12roPzIykyA4&iflsig=AHkkrS4AAAAAYlY_Jx7nB-S_J9DjC4xeUy-inkV6ztDU&oq=colo&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDOgoILhDHARCjAhAnOggIABCxAxCDAToICC4QsQMQgwE6CAguEIAEELEDUABYlQZgqBpoAHAAeACAAa4BiAH2A5IBAzAuNJgBAKABAQ&sclient=gws-wiz'),
+                          ))),
                   Container(
                       child: Align(
                         alignment: Alignment.bottomRight,
@@ -199,7 +194,7 @@ class TwoState extends State<Two> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -327,26 +322,20 @@ class OneState extends State<One> {
                             },),)),),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Book an Appointment',
+                            ),
+                            onPressed: () => launch('https://www.practo.com/mumbai/doctor/dr-hardik-shah-1-gastroenterologist?practice_id=1114150&specialization=Constipation%20Treatment&referrer=doctor_listing&category_name=service&category_id=1634'),
+                          ))),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested test - COLONOSCOPY  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Suggested test- Colonoscopy',
+                            ),
+                            onPressed: () => launch('https://www.google.com/search?q=colonoscopy+test+near+me&sxsrf=APq-WBsRPJ5RkkqM3-P29k8Nc2geADjHUw%3A1649815831662&source=hp&ei=FzFWYrzSJse12roPzIykyA4&iflsig=AHkkrS4AAAAAYlY_Jx7nB-S_J9DjC4xeUy-inkV6ztDU&oq=colo&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDOgoILhDHARCjAhAnOggIABCxAxCDAToICC4QsQMQgwE6CAguEIAEELEDUABYlQZgqBpoAHAAeACAAa4BiAH2A5IBAzAuNJgBAKABAQ&sclient=gws-wiz'),
+                          ))),
                   Container(
                       child: Align(
                         alignment: Alignment.bottomRight,
@@ -478,7 +467,7 @@ class OneState extends State<One> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -606,26 +595,20 @@ class ThreeState extends State<Three> {
                             },),)),),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Book an Appointment',
+                            ),
+                            onPressed: () => launch('https://www.practo.com/mumbai/doctor/dr-hardik-shah-1-gastroenterologist?practice_id=1114150&specialization=Constipation%20Treatment&referrer=doctor_listing&category_name=service&category_id=1634'),
+                          ))),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested test - COLONOSCOPY  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Suggested test- Colonoscopy',
+                            ),
+                            onPressed: () => launch('https://www.google.com/search?q=colonoscopy+test+near+me&sxsrf=APq-WBsRPJ5RkkqM3-P29k8Nc2geADjHUw%3A1649815831662&source=hp&ei=FzFWYrzSJse12roPzIykyA4&iflsig=AHkkrS4AAAAAYlY_Jx7nB-S_J9DjC4xeUy-inkV6ztDU&oq=colo&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDOgoILhDHARCjAhAnOggIABCxAxCDAToICC4QsQMQgwE6CAguEIAEELEDUABYlQZgqBpoAHAAeACAAa4BiAH2A5IBAzAuNJgBAKABAQ&sclient=gws-wiz'),
+                          ))),
                   Container(
                       child: Align(
                         alignment: Alignment.bottomRight,
@@ -757,7 +740,7 @@ class ThreeState extends State<Three> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -883,26 +866,20 @@ class FourState extends State<Four> {
                             },),)),),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Book an Appointment',
+                            ),
+                            onPressed: () => launch('https://www.practo.com/mumbai/doctor/dr-hardik-shah-1-gastroenterologist?practice_id=1114150&specialization=Constipation%20Treatment&referrer=doctor_listing&category_name=service&category_id=1634'),
+                          ))),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested test - COLONOSCOPY  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Suggested test- Colonoscopy',
+                            ),
+                            onPressed: () => launch('https://www.google.com/search?q=colonoscopy+test+near+me&sxsrf=APq-WBsRPJ5RkkqM3-P29k8Nc2geADjHUw%3A1649815831662&source=hp&ei=FzFWYrzSJse12roPzIykyA4&iflsig=AHkkrS4AAAAAYlY_Jx7nB-S_J9DjC4xeUy-inkV6ztDU&oq=colo&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDOgoILhDHARCjAhAnOggIABCxAxCDAToICC4QsQMQgwE6CAguEIAEELEDUABYlQZgqBpoAHAAeACAAa4BiAH2A5IBAzAuNJgBAKABAQ&sclient=gws-wiz'),
+                          ))),
                   Container(
                       child: Align(
                         alignment: Alignment.bottomRight,
@@ -1033,7 +1010,7 @@ class FourState extends State<Four> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -1161,26 +1138,20 @@ class FiveState extends State<Five> {
                             },),)),),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Book an Appointment',
+                            ),
+                            onPressed: () => launch('https://www.practo.com/mumbai/doctor/dr-hardik-shah-1-gastroenterologist?practice_id=1114150&specialization=Constipation%20Treatment&referrer=doctor_listing&category_name=service&category_id=1634'),
+                          ))),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested test - COLONOSCOPY  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Suggested test- Colonoscopy',
+                            ),
+                            onPressed: () => launch('https://www.google.com/search?q=colonoscopy+test+near+me&sxsrf=APq-WBsRPJ5RkkqM3-P29k8Nc2geADjHUw%3A1649815831662&source=hp&ei=FzFWYrzSJse12roPzIykyA4&iflsig=AHkkrS4AAAAAYlY_Jx7nB-S_J9DjC4xeUy-inkV6ztDU&oq=colo&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDOgoILhDHARCjAhAnOggIABCxAxCDAToICC4QsQMQgwE6CAguEIAEELEDUABYlQZgqBpoAHAAeACAAa4BiAH2A5IBAzAuNJgBAKABAQ&sclient=gws-wiz'),
+                          ))),
                   Container(
                       child: Align(
                         alignment: Alignment.bottomRight,
@@ -1312,7 +1283,7 @@ class FiveState extends State<Five> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -1435,26 +1406,20 @@ class SixState extends State<Six> {
                             },),)),),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Book an Appointment',
+                            ),
+                            onPressed: () => launch('https://www.practo.com/mumbai/doctor/dr-hardik-shah-1-gastroenterologist?practice_id=1114150&specialization=Constipation%20Treatment&referrer=doctor_listing&category_name=service&category_id=1634'),
+                          ))),
                   Container(
                       child: Align(
-                        alignment: Alignment.bottomLeft,
-                        child: Container(
-                          padding: EdgeInsets.only(bottom: 5,top:8),
-                          height: 35,
-                          color: Colors.black12,
-                          child:Text(' Suggested test - COLONOSCOPY  '),
-                        ),
-                      )
-                  ),
+                          alignment: Alignment.bottomLeft,
+                          child: ElevatedButton(
+                            child: Text('Suggested test- Colonoscopy',
+                            ),
+                            onPressed: () => launch('https://www.google.com/search?q=colonoscopy+test+near+me&sxsrf=APq-WBsRPJ5RkkqM3-P29k8Nc2geADjHUw%3A1649815831662&source=hp&ei=FzFWYrzSJse12roPzIykyA4&iflsig=AHkkrS4AAAAAYlY_Jx7nB-S_J9DjC4xeUy-inkV6ztDU&oq=colo&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDOgoILhDHARCjAhAnOggIABCxAxCDAToICC4QsQMQgwE6CAguEIAEELEDUABYlQZgqBpoAHAAeACAAa4BiAH2A5IBAzAuNJgBAKABAQ&sclient=gws-wiz'),
+                          ))),
                   Container(
                       child: Align(
                         alignment: Alignment.bottomRight,
@@ -1579,7 +1544,7 @@ class SixState extends State<Six> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),

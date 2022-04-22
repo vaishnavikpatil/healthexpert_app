@@ -146,7 +146,7 @@ class SixthState extends State<Sixth> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -355,7 +355,7 @@ class FifthState extends State<Fifth> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -576,7 +576,7 @@ class FourthState extends State<Fourth> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -802,7 +802,7 @@ class ThirdState extends State<Third> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -1027,7 +1027,7 @@ class SecondState extends State<Second> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),
@@ -1252,7 +1252,7 @@ class FirstState extends State<First> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                             },
                           ),

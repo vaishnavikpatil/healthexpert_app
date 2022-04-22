@@ -40,7 +40,7 @@ class ConstipationState extends State<Constipation> {
 
                           height: 35,
                           child: ElevatedButton(
-                            child: Text('Feel bloated ans nauseous'),
+                            child: Text('Feel bloated and nauseous'),
                             onPressed:(){
                               Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Fifth()));
                             },),)),),

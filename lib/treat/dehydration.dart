@@ -257,15 +257,12 @@ class TwoState extends State<Two> {
                         },),)),),
                 Container(
                     child: Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Container(
-                        padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
-                        color: Colors.black12,
-                        child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                      ),
-                    )
-                ),
+                        alignment: Alignment.bottomLeft,
+                        child: ElevatedButton(
+                          child: Text('Book an Appointment',
+                          ),
+                          onPressed: () => launch('https://www.practo.com/thane/doctor/dr-rahul-jalgaonkar-general-physician?practice_id=727007&specialization=General%20Physician&referrer=doctor_listing'),
+                        ))),
                 Container(
                     child: Align(
                       alignment: Alignment.bottomRight,
@@ -465,15 +462,12 @@ class ThreeState extends State<Three> {
                           },),)),),
                 Container(
                     child: Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Container(
-                        padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
-                        color: Colors.black12,
-                        child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                      ),
-                    )
-                ),
+                        alignment: Alignment.bottomLeft,
+                        child: ElevatedButton(
+                          child: Text('Book an Appointment',
+                          ),
+                          onPressed: () => launch('https://www.practo.com/thane/doctor/dr-rahul-jalgaonkar-general-physician?practice_id=727007&specialization=General%20Physician&referrer=doctor_listing'),
+                        ))),
                 Container(
                     child: Align(
                       alignment: Alignment.bottomRight,
@@ -675,15 +669,12 @@ class FourState extends State<Four> {
                           },),)),),
                 Container(
                     child: Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Container(
-                        padding: EdgeInsets.only(bottom: 5,top:8),
-                        height: 35,
-                        color: Colors.black12,
-                        child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-                      ),
-                    )
-                ),
+                        alignment: Alignment.bottomLeft,
+                        child: ElevatedButton(
+                          child: Text('Book an Appointment',
+                          ),
+                          onPressed: () => launch('https://www.practo.com/thane/doctor/dr-rahul-jalgaonkar-general-physician?practice_id=727007&specialization=General%20Physician&referrer=doctor_listing'),
+                        ))),
                 Container(
                     child: Align(
                       alignment: Alignment.bottomRight,
@@ -884,17 +875,14 @@ class FiveState extends State<Five> {
               onPressed:(){
                 Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Deh()));
               },),)),),
-        Container(
-            child: Align(
-              alignment: Alignment.bottomLeft,
-              child: Container(
-                padding: EdgeInsets.only(bottom: 5,top:8),
-                height: 35,
-                color: Colors.black12,
-                child:Text(' Suggested Doctor - Ms.ABC (Contact no- XXXXXXXXXX)  '),
-              ),
-            )
-        ),
+                Container(
+                    child: Align(
+                        alignment: Alignment.bottomLeft,
+                        child: ElevatedButton(
+                          child: Text('Book an Appointment',
+                          ),
+                          onPressed: () => launch('https://www.practo.com/thane/doctor/dr-rahul-jalgaonkar-general-physician?practice_id=727007&specialization=General%20Physician&referrer=doctor_listing'),
+                        ))),
                 Container(
                     child: Align(
                       alignment: Alignment.bottomRight,

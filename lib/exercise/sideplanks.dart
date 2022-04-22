@@ -65,7 +65,7 @@ class sideplanksState extends State<sideplanks> {
                 child: Text('Click here for a demo',
                   textAlign: TextAlign.center,
                   style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,
-                    color: Colors.red,
+                    color: Colors.blue,
                     decoration: TextDecoration.underline,
                   ),),
                 onTap: () => launch('https://thumbs.gfycat.com/RingedGleefulCrustacean-mobile.mp4')
